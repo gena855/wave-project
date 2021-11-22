@@ -1,0 +1,23 @@
+---
+- name: copy and execute script install docker
+  hosts: all
+  become: false
+  tasks:        
+    - name: Execute script on remote_machine that instaling docker
+      script: ~/ansible/docker-install.sh
+    
+- name: user add
+  hosts: all
+  tasks:      
+     - name: adding user ubuntu to docker group
+       user:
+         name: '{{ ansible_user }}'
+         groups: docker
+
+     - name: Reset ssh connection to allow user changes to affect 'current login user'
+       meta: reset_connection
+       
+- hosts: all
+  become: false 
+  roles:
+    - webServer

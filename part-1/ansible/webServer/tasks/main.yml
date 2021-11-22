@@ -1,0 +1,16 @@
+---       
+- name: create derectory
+  file:
+    path: /home/ubuntu/www/html
+    state: directory
+    owner: ubuntu
+    group: docker
+
+- name: Generate WebPage
+  template: 
+    src: index.html.j2 
+    dest: /home/ubuntu/www/html/index.html
+    mode: 0555
+
+- name: run nginx on docker and bind directory with WebPage
+  shell: "docker run -v /home/ubuntu/www/html/:/usr/share/nginx/html -d -p 80:80 nginx:latest"

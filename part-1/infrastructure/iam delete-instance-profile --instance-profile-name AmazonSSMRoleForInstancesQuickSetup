@@ -1,0 +1,153 @@
+{
+    "InstanceProfiles": [
+        {
+            "Path": "/",
+            "InstanceProfileName": "AmazonSSMRoleForInstancesQuickSetup",
+            "InstanceProfileId": "AIPAWHMIHCO7DIZEY5Z7I",
+            "Arn": "arn:aws:iam::428171793342:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
+            "CreateDate": "2021-08-15T16:48:51+00:00",
+            "Roles": [
+                {
+                    "Path": "/",
+                    "RoleName": "AmazonSSMRoleForInstancesQuickSetup",
+                    "RoleId": "AROAWHMIHCO7NFEWPJPCX",
+                    "Arn": "arn:aws:iam::428171793342:role/AmazonSSMRoleForInstancesQuickSetup",
+                    "CreateDate": "2021-08-15T16:48:47+00:00",
+                    "AssumeRolePolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Effect": "Allow",
+                                "Principal": {
+                                    "Service": "ec2.amazonaws.com"
+                                },
+                                "Action": "sts:AssumeRole"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Path": "/",
+            "InstanceProfileName": "ec2_profile",
+            "InstanceProfileId": "AIPAWHMIHCO7LGL556XEC",
+            "Arn": "arn:aws:iam::428171793342:instance-profile/ec2_profile",
+            "CreateDate": "2021-11-09T19:44:30+00:00",
+            "Roles": []
+        },
+        {
+            "Path": "/",
+            "InstanceProfileName": "ecsInstanceRole",
+            "InstanceProfileId": "AIPAWHMIHCO7PH7EGTR63",
+            "Arn": "arn:aws:iam::428171793342:instance-profile/ecsInstanceRole",
+            "CreateDate": "2021-10-01T08:25:31+00:00",
+            "Roles": [
+                {
+                    "Path": "/",
+                    "RoleName": "ecsInstanceRole",
+                    "RoleId": "AROAWHMIHCO7EJETPWH2B",
+                    "Arn": "arn:aws:iam::428171793342:role/ecsInstanceRole",
+                    "CreateDate": "2021-10-01T08:25:31+00:00",
+                    "AssumeRolePolicyDocument": {
+                        "Version": "2008-10-17",
+                        "Statement": [
+                            {
+                                "Sid": "",
+                                "Effect": "Allow",
+                                "Principal": {
+                                    "Service": "ec2.amazonaws.com"
+                                },
+                                "Action": "sts:AssumeRole"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Path": "/",
+            "InstanceProfileName": "eksworkshop-admin",
+            "InstanceProfileId": "AIPAWHMIHCO7CFSSB5K3J",
+            "Arn": "arn:aws:iam::428171793342:instance-profile/eksworkshop-admin",
+            "CreateDate": "2021-10-04T15:48:16+00:00",
+            "Roles": [
+                {
+                    "Path": "/",
+                    "RoleName": "eksworkshop-admin",
+                    "RoleId": "AROAWHMIHCO7BH72N4654",
+                    "Arn": "arn:aws:iam::428171793342:role/eksworkshop-admin",
+                    "CreateDate": "2021-10-04T15:48:16+00:00",
+                    "AssumeRolePolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Effect": "Allow",
+                                "Principal": {
+                                    "Service": "ec2.amazonaws.com"
+                                },
+                                "Action": "sts:AssumeRole"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Path": "/",
+            "InstanceProfileName": "my-ssm-role",
+            "InstanceProfileId": "AIPAWHMIHCO7LIUPYGVMB",
+            "Arn": "arn:aws:iam::428171793342:instance-profile/my-ssm-role",
+            "CreateDate": "2021-08-20T08:00:40+00:00",
+            "Roles": [
+                {
+                    "Path": "/",
+                    "RoleName": "my-ssm-role",
+                    "RoleId": "AROAWHMIHCO7NMB546ZIU",
+                    "Arn": "arn:aws:iam::428171793342:role/my-ssm-role",
+                    "CreateDate": "2021-08-20T08:00:39+00:00",
+                    "AssumeRolePolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Effect": "Allow",
+                                "Principal": {
+                                    "Service": "ec2.amazonaws.com"
+                                },
+                                "Action": "sts:AssumeRole"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Path": "/",
+            "InstanceProfileName": "ssm-test",
+            "InstanceProfileId": "AIPAWHMIHCO7N2L2C3J6C",
+            "Arn": "arn:aws:iam::428171793342:instance-profile/ssm-test",
+            "CreateDate": "2021-08-04T18:39:54+00:00",
+            "Roles": [
+                {
+                    "Path": "/",
+                    "RoleName": "ssm-test",
+                    "RoleId": "AROAWHMIHCO7E7WUHSEEW",
+                    "Arn": "arn:aws:iam::428171793342:role/ssm-test",
+                    "CreateDate": "2021-08-04T18:39:54+00:00",
+                    "AssumeRolePolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Effect": "Allow",
+                                "Principal": {
+                                    "Service": "ec2.amazonaws.com"
+                                },
+                                "Action": "sts:AssumeRole"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
