@@ -35,7 +35,7 @@ resource "aws_iam_role_policy_attachment" "registry_read" {
 
 resource "aws_eks_node_group" "nodes_general" {
   cluster_name    = aws_eks_cluster.eks.name
-  node_group_name = "nodes-01"
+  node_group_name = "workers"
 
   # Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Node Group.
   node_role_arn = aws_iam_role.nodes_group.arn

@@ -65,7 +65,7 @@ resource "aws_internet_gateway" "wave-gw" {
 }
 
 # route tables
-resource "aws_route_table" "public-subnet-a" {
+resource "aws_route_table" "public-subnets" {
   vpc_id = aws_vpc.wave-vpc.id
   route {
     cidr_block = "0.0.0.0/0"
@@ -73,12 +73,16 @@ resource "aws_route_table" "public-subnet-a" {
   }
 
   tags = {
-    Name = "public-subnet-a"
+    Name = "public-subnets"
   }
 }
 
 # route associations public
 resource "aws_route_table_association" "public-subnet-a" {
   subnet_id      = aws_subnet.public-subnet-a.id
-  route_table_id = aws_route_table.public-subnet-a.id
+  route_table_id = aws_route_table.public-subnets.id
 }
+
+resource "aws_route_table_association" "public-subnet-a" {
+  subnet_id      = aws_subnet.public-subnet-b.id
+  route_table_id = aws_route_table.public-subnets.id
