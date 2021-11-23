@@ -1,6 +1,6 @@
 eks cluster deploy
 
-by runing the script, we deploy infrastructure for eks and eks cluster.
+by runing terraform, we deploy infrastructure for eks cluster.
 
 we create:
 vpc
