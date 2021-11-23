@@ -1,5 +1,8 @@
 part 1
 
+for this deploy i used terraform for deploy the infrastructure,
+and ansible for instances configuration
+
 download the repo "git clone git@github.com:gena855/wave-project.git"
 
 you should run the setup.sh script from wave-project/part-1/infrastructure
