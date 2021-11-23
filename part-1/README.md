@@ -1,5 +1,9 @@
 part 1
 
+download the repo "git clone git@github.com:gena855/wave-project.git"
+
+you should run the setup.sh script from wave-project/part-1/infrastructure
+
 1. by running the scrypt, you make infrastructure by terraform and configure instances to run docker with nginx web server.
 
 2. the first step is crate the vpc, subnets, security groups, igw, nat, iam role, route tables, key for connecting the servers.
